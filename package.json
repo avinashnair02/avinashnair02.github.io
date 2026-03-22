@@ -1,5 +1,6 @@
 {
-  "name": "rajesh-portfolio",
+  "name": "Avinash-portfolio",
+  "homepage": "https://avinashnair02.github.io/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,7 +8,9 @@
     "dev": "vite --host",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b main -d dist -r https://github.com/avinashnair02/avinashnair02.github.io.git"
   },
   "dependencies": {
     "@gsap/react": "^2.1.1",
@@ -35,6 +38,7 @@
     "eslint": "^9.9.0",
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.9",
+    "gh-pages": "^6.3.0",
     "globals": "^15.9.0",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
